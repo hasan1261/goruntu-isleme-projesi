@@ -1,30 +1,72 @@
-# 🎨 Karakalem Efekti Görüntü İşleme Projesi
+✏️ Karakalem Efekti – Görüntü İşleme Projesi
 
-Bu proje, Python kullanılarak geliştirilmiş basit bir **görüntü işleme uygulamasıdır**.  
-Yüklenen bir fotoğrafı **karakalem (sketch) efektine** dönüştürür.
+Bu proje, Python ve Streamlit kullanılarak geliştirilmiş basit ve etkili bir görüntü işleme uygulamasıdır. Kullanıcı tarafından yüklenen bir fotoğraf, OpenCV teknikleri kullanılarak karakalem (sketch) efektine dönüştürülür.
 
-Proje, VS Code ortamında çalışacak şekilde hazırlanmıştır ve temel görüntü işleme mantığını öğrenmek isteyenler için uygundur.
+🚀 Özellikler
 
----
+JPG, PNG ve WEBP formatlarında fotoğraf yükleme
 
-## 🚀 Özellikler
+Gri tonlama (Grayscale)
 
-- Fotoğraf yükleme
-- Karakalem (sketch) efekti uygulama
-- OpenCV kullanılarak görüntü işleme
-- Basit ve anlaşılır kod yapısı
-- VS Code ile uyumlu
+CLAHE ile kontrast artırma
 
----
+Gaussian Blur uygulama
 
-## 🛠️ Kullanılan Teknolojiler
+Karakalem (Sketch) efekti oluşturma
 
-- Python
-- OpenCV (cv2)
-- NumPy
-- (Varsa) Streamlit
+Orijinal ve işlenmiş görüntüyü yan yana gösterme
 
+Kullanıcı dostu Streamlit arayüzü
 
+🛠️ Kullanılan Teknolojiler
 
-## 📂 Proje Yapısı
+Python
 
+Streamlit
+
+OpenCV (cv2)
+
+NumPy
+
+Pillow (PIL)
+
+📂 Proje Yapısı
+
+karakalem-efekti
+├── app.py
+└── README.md
+
+⚙️ Kurulum ve Çalıştırma
+
+Gerekli kütüphaneleri yüklemek için:
+
+pip install streamlit opencv-python numpy pillow
+
+Uygulamayı çalıştırmak için:
+
+streamlit run app.py
+
+🖼️ Uygulama Nasıl Çalışır?
+
+Kullanıcı bir fotoğraf yükler
+
+Fotoğraf gri tonlamaya çevrilir
+
+CLAHE yöntemi ile kontrast artırılır
+
+Görüntü terslenir ve bulanıklaştırılır
+
+cv2.divide yöntemi ile karakalem efekti elde edilir
+
+Keskinleştirme filtresi uygulanır
+
+Sonuç ekranda gösterilir
+
+🎯 Amaç
+
+Bu proje, görüntü işleme mantığını öğrenmek, OpenCV kütüphanesini pratikte kullanmak ve Streamlit ile basit bir arayüz geliştirmek amacıyla hazırlanmıştır.
+
+👤 Geliştirici
+
+Hasan Şimşek
+E-posta: simsekhasan2112@gmail.com
